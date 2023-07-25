@@ -21,10 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let swipingController = PageControllers(collectionViewLayout: layout)
+        let swiping2Controller = ViewControllers(collectionViewLayout: layout)
         
 //        nav1.viewControllers = [homeView, swipingController]
         
-        window?.rootViewController = swipingController
+        window?.rootViewController = swiping2Controller
 //        window?.rootViewController = OnBoardingViewController()
         window?.makeKeyAndVisible()
     }
